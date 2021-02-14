@@ -22,6 +22,10 @@ Rails.application.routes.draw do
   get "password/reset/edit", to: "password_resets#edit"
   patch "password/reset/edit", to: "password_resets#update"
 
+  # terms of service to access application 
+  get "termsofservice", to:"terms_of_service#new"
+
+
 
 
 
