@@ -25,7 +25,8 @@ Rails.application.routes.draw do
   # terms of service to access application 
   get "termsofservice", to:"terms_of_service#new"
 
-
+  # omni auth callback
+  get "/auth/twitter/callback", to: "omniauth_callbacks#twitter"
 
 
 
