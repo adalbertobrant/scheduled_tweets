@@ -3,9 +3,13 @@
 
 <%= render "form", tweet: @tweet %>
 
-<!--Destroy the tweet-->
+
+
+<!--Destroy the tweet -->
+
 <%= form_with model: @tweet do |form| %>
-<% if form.object.persisted? %>
-    <%= button_to "Delete", form.object, method: :delete, data: {confirm: "Are you sure?"}, class: "btn btn-outline-danger" %>
+  <% if form.object.persisted? %>
+    <%= button_to "Delete", form.object, method: :delete, data: {confirm: "Are you sure?"}, class: "align-items-right btn btn-outline-danger" %>
   <%end%> 
-  <%end%>
+<%end%>
+
