@@ -28,6 +28,11 @@ Rails.application.routes.draw do
   # omni auth callback
   get "/auth/twitter/callback", to: "omniauth_callbacks#twitter"
 
+  # generate crud for twitter_accounts
+  resources :twitter_accounts
+
+  #generate crud for users tweets
+  resources :tweets
 
 
   # GET root
