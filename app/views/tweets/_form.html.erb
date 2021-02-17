@@ -24,11 +24,10 @@
   
   
 
-<!-- 
-Not working here so I moved to edit.html.erb
+
     <% if form.object.persisted? %>
-    <%= button_to "Delete", form.object, method: :delete, data: {confirm: "Are you sure?"}, class: "btn btn-outline-danger" %>
-  <%end%> -->
+    <%= link_to "Delete", form.object, method: :delete, data: {confirm: "Are you sure?"}, class: "btn btn-outline-danger" %>
+  <%end%> 
 
 
 <% end %>

@@ -78,5 +78,8 @@ Rails.application.configure do
   #config.action_mailer.default_url_options = { :host => "example.com" }
   #config.action_mailer.default_url_options = {:host => "localhost:3000"} #stackoverflow
   config.action_mailer.default_url_options = { host: "localhost:3000"}
+  
+  #adding sidekiq
+  config.active_job.queue_adapter = :sidekiq
 
 end

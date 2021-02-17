@@ -13,6 +13,7 @@ class TweetsController < ApplicationController
   def create
     @tweet = Current.user.tweets.new(tweet_params)
     if @tweet.save
+     
       redirect_to tweets_path, notice: "Tweet was schedully successfully"
     else
       render :new
@@ -24,6 +25,7 @@ class TweetsController < ApplicationController
 
   def update
     if @tweet.update(tweet_params)
+      
       redirect_to tweets_path, notice: "Tweet was updated successfully"
     else
       render :new
