@@ -40,3 +40,6 @@ yarn-debug.log*
 .yarn-integrity
 
 /config/credentials/development.key
+
+# Ignore dump file from redis
+dump.rdb
