@@ -43,3 +43,5 @@ yarn-debug.log*
 
 # Ignore dump file from redis
 dump.rdb
+
+/config/credentials/production.key
